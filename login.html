@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Добро пожаловать</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <div class="formm" action="#">
+                <h1>Зарегистрироваться</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>или используйте вашу электронную почту для регистрации</span>
+                <input type="text" placeholder="Name" id="nameID" />
+                <input type="email" placeholder="Email" id="emailID" />
+                <input type="password" placeholder="Password" id="passwordID" />
+                <input type="password" placeholder="Password" id="passwordID2" />
+                <div id="mainSpan"></div>
+                <div id="passwordSpan"></div>
+                <a href="./login.html"><button onclick="signUp()">Сохранить</button></a>
+            </div>
+        </div>
+        <div class="form-container sign-in-container">
+            <div class="formm" action="#">
+                <h1>Войти</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>или используйте свой аккаунт</span>
+                <input type="email" placeholder="Email" id="userEmail" />
+                <div class="input__wrapper">
+                    <input type="password" class="js-password-input" placeholder="Password" id="userPassword" />
+                    <button class="btn__pass js-btn-password">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+                <a href="#">Забыли Ваш пароль?</a>
+                <button onclick="submit()">Войти</button>
+            </div>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Добро пожаловать!</h1>
+                    <p>Чтобы оставаться на связи с нами, пожалуйста, войдите под своей личной информацией</p>
+                    <button class="ghost" id="signIn">Войти</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Привет, друг!</h1>
+                    <p>Введите свои личные данные и начните путешествие с нами</p>
+                    <button class="ghost" id="signUp">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Уведомление об использовании файлов <a href="https://uc-itcom.ru/uvedomleniye">cookie</a> и похожих
+            технологий
+        </p>
+    </footer>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
